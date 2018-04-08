@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp">
+    <!--card_view:cardElevation="5dp"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/property_card_height"
+        android:orientation="vertical"
+        android:weightSum="32">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="27"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/property_main_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dummy_img"
+                    />
+                <!-- ToDo Create a proper layout to hold the three images main photo and property two other photos -->
+                <!--<ImageView
+                      android:id="@+id/property_first_photo"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:scaleType="centerCrop"
+                      />
+                  <ImageView
+                      android:id="@+id/property_second_photo"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:scaleType="centerCrop"
+                      />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/property_title_txt_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:paddingLeft="16dp"
+                        android:paddingTop="5dp"
+                        android:text="1,000,000 EGP
+Area: 250 M²"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/property_location_txt_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="16dp"
+                        android:text="Location: Lotus South, Lotus"
+                        android:textColor="#c7c7c7"
+                        android:textSize="@dimen/sub_title_text"
+                        android:textStyle="italic"
+
+                        />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/property_media_txt_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="11dp"
+                android:text="Has 4 photos and  video"
+                android:textSize="12sp"
+                android:textStyle="italic|bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/email_img_view"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_margin="@dimen/icon_margin"
+                    android:background="#fff"
+                    android:src="@drawable/email"/>
+                <!-- ToDo change the sms icon to a consistence one -->
+                <!--      <android.support.v7.widget.AppCompatImageView
+                          android:id="@+id/message_img_view"
+                          android:layout_width="@dimen/icon_width"
+                          android:layout_height="@dimen/icon_height"
+                          android:layout_margin="@dimen/icon_margin"
+                          android:src="@drawable/message" />-->
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/call_img_view"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_margin="@dimen/icon_margin"
+                    android:background="#fff"
+                    android:src="@drawable/call"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

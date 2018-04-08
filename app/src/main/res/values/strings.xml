@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Aqarmap Task</string>
+    <string name="title_item_list">Properties Listing</string>
+    <string name="title_item_detail">Details</string>
+    <string name="section_url">https://static.aqarmap.net/mobile-json/test/section.json</string>
+    <string name="property_type_url">https://static.aqarmap.net/mobile-json/test/property_type.json</string>
+    <string name="location_url">https://static.aqarmap.net/mobile-json/test/locations.json</string>
+    <string name="price_url">https://static.aqarmap.net/mobile-json/test/price_filter.json</string>
+    <string name="search_base_url">https://static.aqarmap.net/mobile-json/test/search.json</string>
+
+    <string name="property_type_lbl">Type</string>
+    <string name="property_section_lbl">Section</string>
+    <string name="property_location_lbl">Location</string>
+    <string name="property_min_price_lbl">Min. Price</string>
+    <string name="property_max_price_lbl">Max. Price</string>
+
+    <string name="egypt_currency">EGP</string>
+    <string name="area_unit">M²</string>
+    <string name="google_maps_api_key">AIzaSyBSSQx7tIN8gIxkiK28gOlayNwn6yRGte4</string>
+    <string name="search_filter_title">Search Filter</string>
+    <string name="save_update"><![CDATA[Save & update]]></string>
+    <string name="title_activity_item_selection">ItemSelectionActivity</string>
+    <string name="offline_guide"><![CDATA[We couldn\'t connect to the internet!\nThe results will be shown\nwhenever you get\nconnected.]]></string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="property_card_width">400dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="property_card_height">320dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="icon_width">28dp</dimen>
+    <dimen name="icon_height">28dp</dimen>
+    <dimen name="icon_margin">5dp</dimen>
+    <dimen name="property_main_photo_height">300dp</dimen>
+    <dimen name="sub_title_text">14sp</dimen>
+</resources>

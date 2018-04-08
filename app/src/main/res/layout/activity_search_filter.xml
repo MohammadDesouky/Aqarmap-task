@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.aqarmap.androidtask.UI.Activities.SearchFilterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/search_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/search_filter_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e1e1e1"
+                android:padding="10dp"
+                android:text="Search Results comes according these options"
+                android:textStyle="italic"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property_type_lbl"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/property_type_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:text="Apartment"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/line"
+                    android:layerType="software"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property_section_lbl"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/section_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:dropDownWidth="wrap_content"
+                    android:minWidth="120dp"
+                    android:spinnerMode="dropdown"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/line"
+                    android:layerType="software"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property_location_lbl"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/property_location_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:text="Greater Cairo"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+
+                    android:background="@drawable/line"
+                    android:layerType="software"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property_min_price_lbl"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/min_price_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:dropDownWidth="wrap_content"
+                    android:minWidth="110dp"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+
+                    android:background="@drawable/line"
+                    android:layerType="software"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/property_max_price_lbl"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/max_price_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:dropDownWidth="wrap_content"
+                    android:minWidth="110dp"
+                    android:spinnerMode="dropdown"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/line"
+                    android:layerType="software"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/save_and_update_filter_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/save_update"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
+
